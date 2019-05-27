@@ -3,15 +3,15 @@
 
 import os
 
-startfile=str(raw_input('Startdatei: '))
+startfile=str(raw_input('Startdatei: ')) #File to start with
 
-filename=str(raw_input('Dateiname (Default  \'IMG_\' ) : '))
+filename=str(raw_input('Dateiname (Default  \'IMG_\' ) : ')) #file prefix
 
-name=str(raw_input('Videoname (Default  \'timelapse\' ) : '))
+name=str(raw_input('Videoname (Default  \'timelapse\' ) : ')) #video name
 
-fps=str(raw_input('FPS (Default  \'24\' ) : '))
+fps=str(raw_input('FPS (Default  \'24\' ) : ')) #end fps
 
-vidtype=str(raw_input('Videodateiformat (Default  \'.mp4\' ) : '))
+vidtype=str(raw_input('Videodateiformat (Default  \'.mp4\' ) : ')) #output format
 
 
 
