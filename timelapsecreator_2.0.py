@@ -33,7 +33,6 @@ temp=startfile.split(filename)
 
 path=temp[0]
 
-
 temp=temp[1].split('.')
 
 filetype='.'+temp[1]
@@ -44,10 +43,11 @@ print(startnumber,filename)
 os.chdir(path)
 
 ffname='"'+name+'ffmpeg'+vidtype+'"'
+outname='"'+name+vidtype+'"'
 
 os.system('ffmpeg -r '+fps+' -start_number '+str(startnumber)+' -i '+filename+'%d'+filetype+' -pix_fmt yuv420p '+ffname)
 
-os.system('HandBrakeCLI -i '+ffname+' -o '+name+vidtype)
+os.system('HandBrakeCLI -i '+ffname+' -o '+outname)
 #os.remove(ffname)
 
 
